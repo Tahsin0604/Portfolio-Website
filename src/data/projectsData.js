@@ -71,7 +71,7 @@ export const projectData = [
       "Only Admin can manage users' roles and can determine whether a class can be approved or denied and gives feedback to a class. Instructors can only make or edit a class.",
     ],
     project_image: "/screenshot of web/3.harmonyacademy projects.png",
-    project_full_image: "/screenshot of web/1.sushisavvy.png",
+    project_full_image: "/screenshot of web/3.harmonyacademy.png",
     live_site: "https://harmonyacademy0609.web.app/",
     client_side_git: "https://github.com/Tahsin0604/harmony-academy-client",
     server_side_git: "https://github.com/Tahsin0604/harmony-academy-server",
