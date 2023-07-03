@@ -18,7 +18,7 @@ const ProjectCard = ({ project }) => {
           {project.project_name}
         </h4>
         <p className="capitalize text-white my-1">React Js</p>
-        <div className="flex items-center justify-center gap-3 mt-3">
+        <div className="gird grid-cols-2 items-center justify-center gap-3 mt-3">
           <Link
             href={project.live_site}
             target="_blank"
