@@ -14,7 +14,7 @@ const About = () => {
         <h6 className=" text-sky-500 tracking-[4px] uppercase mb-4">About</h6>
         <h1>Who I Am</h1>
       </div>
-      <div className="flex justify-between items-center flex-col-reverse md:flex-row mt-12">
+      <div className="flex justify-between items-center flex-col-reverse md:flex-row mt-12 gap-6">
         <div className="w-full md:w-2/3">
           <p>
             Hi I am{" "}
