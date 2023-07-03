@@ -52,12 +52,14 @@ const projectDetails = ({ params }) => {
               </Link>
               <Link
                 href={project.client_side_git}
+                target="_blank"
                 className="btn btn_project_details uppercase flex items-center"
               >
                 <FaGithub className="mr-1"></FaGithub> Client Code
               </Link>
               <Link
                 href={project.server_side_git}
+                target="_blank"
                 className="btn btn_project_details uppercase flex items-center"
               >
                 <FaGithub className="mr-1"></FaGithub> Server Code
