@@ -1,0 +1,17 @@
+.image-scroller {
+  overflow: hidden;
+  height: 400px;
+}
+
+.image-scroller.scroll img {
+  animation: scroll 10s ease-in;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-80%);
+  }
+}
