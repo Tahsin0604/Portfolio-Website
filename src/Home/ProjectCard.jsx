@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { FaGithub } from "react-icons/fa";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -24,6 +25,20 @@ const ProjectCard = ({ project }) => {
             className="btn btn_projects uppercase"
           >
             Live Site
+          </Link>
+          <Link
+            href={project.client_side_git}
+            target="_blank"
+            className="btn btn_projects uppercase flex items-center"
+          >
+            <FaGithub className="mr-1"></FaGithub> Client Code
+          </Link>
+          <Link
+            href={project.server_side_git}
+            target="_blank"
+            className="btn btn_projects uppercase flex items-center"
+          >
+            <FaGithub className="mr-1"></FaGithub> Server Code
           </Link>
           <Link
             href={`/projects/${project.id}`}
