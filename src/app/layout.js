@@ -10,6 +10,9 @@ const roboto = Roboto({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" href="/icons8-person-24.png" sizes="any" />
+      </head>
       <body className={`${roboto.variable} px-2`}>
         <>{children}</>
       </body>
