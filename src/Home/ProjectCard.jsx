@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { FaGithub } from "react-icons/fa";
+import { FaAngleRight, FaGithub } from "react-icons/fa";
 
 const ProjectCard = ({ project }) => {
   return (
@@ -42,9 +42,9 @@ const ProjectCard = ({ project }) => {
           </Link>
           <Link
             href={`/projects/${project.id}`}
-            className="btn btn_projects uppercase"
+            className="btn btn_projects uppercase flex items-center"
           >
-            View Details
+            View Details <FaAngleRight className="ml-2"></FaAngleRight>
           </Link>
         </div>
       </div>
