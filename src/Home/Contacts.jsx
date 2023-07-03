@@ -5,6 +5,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
 import Social from "@/components/Social";
+import Image from "next/image";
 const Contacts = () => {
   const form = useRef();
   const sendEmail = (e) => {
@@ -37,7 +38,13 @@ const Contacts = () => {
       </div>
       <div className="flex flex-col lg:flex-row  justify-between gap-4 mt-10">
         <div className="w-full lg:w-1/2 flex flex-col shadow-xl shadow-gray-400 rounded-xl p-4 bg-slate-50">
-          <img src="/contact.jpg" className="w-full rounded-xl" />
+          <Image
+            src="/contact.jpg"
+            alt="Contact image"
+            width={1920}
+            height={1080}
+            className="w-full rounded-xl"
+          />
           <h3 className="mt-6">Md. Natik Alam Bhuyan Tahsin</h3>
           <p>Front-End Developer</p>
           <p className="mt-5">
@@ -45,7 +52,7 @@ const Contacts = () => {
             lets talk
           </p>
           <div className="mt-16 lg:mt-auto">
-            <p className="uppercase">Let's connect now</p>
+            <p className="uppercase">Let&apos;s connect now</p>
             <Social></Social>
           </div>
         </div>

@@ -153,7 +153,7 @@ const Navbar = () => {
               </ul>
             )}
             <div className="mt-auto">
-              <p className="uppercase">Let's connect now</p>
+              <p className="uppercase">Let&apos;s connect now</p>
               <Social></Social>
             </div>
           </div>

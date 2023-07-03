@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 export const metadata = {
@@ -8,7 +9,13 @@ export default function Custom404() {
   return (
     <div className="h-screen flex flex-col justify-center items-center space-y-4">
       <div className="p-2 rounded-lg shadow-lg">
-        <img src="/error.jpg" alt="error" className="w-80 rounded-lg"></img>
+        <Image
+          src="/error.jpg"
+          alt="Error image"
+          width={1920}
+          height={1080}
+          className="w-80  rounded-lg"
+        />
       </div>
       <h2 className="text-red-600">404 - Page Not Found</h2>
       <Link

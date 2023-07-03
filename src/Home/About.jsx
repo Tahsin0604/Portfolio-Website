@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaExternalLinkAlt } from "react-icons/fa";
@@ -39,7 +40,13 @@ const About = () => {
         </div>
         <div className="mx-auto">
           <div className="rounded-lg overflow-hidden w-fit p-3 bg-gradient-to-br from-gray-100 to-white shadow-[4px_4px_8px_#cbcbcb,4px_-4px_8px_#ffffff]">
-            <img src="/xdfs.jpg" alt="" className="w-80 h-80 rounded-lg" />
+            <Image
+              src="/xdfs.jpg"
+              alt="About image"
+              width={1920}
+              height={1080}
+              className="w-80 h-80 rounded-lg"
+            />
           </div>
         </div>
       </div>

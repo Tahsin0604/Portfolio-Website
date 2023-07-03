@@ -10,7 +10,7 @@ module.exports = {
     extend: {
       fontFamily: {
         roboto: "var(--font-roboto)",
-        caveat: ["Caveat", "sans-serif"],
+        // caveat: ["Caveat", "sans-serif"],
       },
     },
   },

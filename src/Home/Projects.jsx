@@ -9,7 +9,7 @@ const Projects = () => {
         <h6 className=" text-sky-500 tracking-[4px] uppercase mb-4">
           Projects
         </h6>
-        <h1>What I've built</h1>
+        <h1>What I&apos;ve built</h1>
       </div>
       <div className="grid  grid-cols-1 lg:grid-cols-3 gap-10 mt-10">
         {projectData.map((project) => (
