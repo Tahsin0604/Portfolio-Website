@@ -1,7 +1,6 @@
 "use client";
-import Link from "next/link";
+
 import React, { useRef } from "react";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
 import Social from "@/components/Social";

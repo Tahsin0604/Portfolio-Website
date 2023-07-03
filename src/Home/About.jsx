@@ -9,7 +9,7 @@ const About = () => {
     event.preventDefault();
   };
   return (
-    <section id="about" className=" custom-container  pt-40 pb-24 h-screen">
+    <section id="about" className="custom-container  pt-40 pb-24">
       <div className="text-center">
         <h6 className=" text-sky-500 tracking-[4px] uppercase mb-4">About</h6>
         <h1>Who I Am</h1>
