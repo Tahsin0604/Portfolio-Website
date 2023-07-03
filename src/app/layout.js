@@ -6,17 +6,17 @@ const roboto = Roboto({
   subsets: ["latin"],
   variable: "--font-roboto",
 });
-// export const metadata: Metadata = {
-//   icons:{
-//     icon:
-//   }
-// };
+export const metadata: Metadata = {
+  icons: {
+    icon: "/icons8-person-24.png",
+  },
+};
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
+      {/* <head>
         <link rel="icon" href="/person.svg" sizes="any" />
-      </head>
+      </head> */}
       <body className={`${roboto.variable} px-2`}>
         <>{children}</>
       </body>
