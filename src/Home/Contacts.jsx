@@ -1,15 +1,16 @@
 "use client";
 
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import toast, { Toaster } from "react-hot-toast";
 import Social from "@/components/Social";
 import Image from "next/image";
 const Contacts = () => {
+  const [emailSend, setEmailSend] = useState(false);
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
-
+    setEmailSend(true);
     emailjs
       .sendForm(
         "service_eh0nbks",
@@ -20,10 +21,13 @@ const Contacts = () => {
       .then(
         (result) => {
           toast.success("Email sent");
+          setEmailSend(false);
           e.target.reset();
         },
         (error) => {
           toast.error("Something Wrong");
+          setEmailSend(false);
+          e.target.reset();
         }
       );
   };
@@ -98,11 +102,13 @@ const Contacts = () => {
                 required
               />
             </div>
-            <input
+            <button
               type="submit"
               className="btn btn_shadow mt-5 uppercase"
-              value="Send"
-            />
+              disabled={emailSend}
+            >
+              Send
+            </button>
           </form>
         </div>
       </div>
