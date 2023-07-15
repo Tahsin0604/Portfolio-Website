@@ -2,6 +2,12 @@
 import Social from "@/components/Social";
 import React from "react";
 import { Typewriter } from "react-simple-typewriter";
+import { Caveat } from "next/font/google";
+const caveat = Caveat({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["cyrillic"],
+  variable: "--font-caveat",
+});
 
 const Hero = () => {
   return (
@@ -9,7 +15,10 @@ const Hero = () => {
       <div className="text-center w-full ">
         <h2 className=" flex flex-col">
           Hi! I&apos;m
-          <span className="capitalize font-caveat text-sky-600 my-4">
+          <span
+            style={caveat.style}
+            className="capitalize font-caveat text-sky-600 my-4"
+          >
             Md. Natik Alam Bhuyan Tahsin
           </span>
           <span className=" text-[#37b6e0b5] font-bold capitalize">

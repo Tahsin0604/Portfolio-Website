@@ -4,8 +4,14 @@ import Link from "next/link";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
-import { FaExternalLinkAlt, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaExternalLinkAlt } from "react-icons/fa";
 import Social from "./Social";
+import { Caveat } from "next/font/google";
+const caveat = Caveat({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["cyrillic"],
+  variable: "--font-caveat",
+});
 
 const Navbar = () => {
   const [activeLink, setActiveLink] = useState("/#hero");
@@ -68,7 +74,11 @@ const Navbar = () => {
       }`}
     >
       <div className="flex justify-between items-center custom-container h-full w-full">
-        <Link href="/" className="text-3xl font-caveat font-bold text-sky-600">
+        <Link
+          href="/"
+          style={caveat.style}
+          className={`text-3xl font-caveat font-bold text-sky-600 ${caveat.variable}`}
+        >
           Tahsin
         </Link>
 
